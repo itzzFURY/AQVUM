@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .choices {
+            display: flex;
+            justify-content: space-around;
+            margin: 2rem 0;
+        }
+        .choice {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #007bff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        .choice:hover {
+            background-color: #007bff;
+            color: white;
+        }
+        .result {
+            margin: 1rem 0;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .stats {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <p>Choose your move:</p>
+        <div class="choices">
+            <div class="choice">✊</div>
+            <div class="choice">✋</div>
+            <div class="choice">✌️</div>
+        </div>
+        <div class="result">
+            Result will be shown here
+        </div>
+        <div class="stats">
+            <p>Games played: 0</p>
+            <p>Games won: 0</p>
+        </div>
+    </div>
+    <pyscript src="Project1.py"></pyscript>
+</body>
+</html>
+
